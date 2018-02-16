@@ -9,7 +9,7 @@ import './todoItem.css';
 const TodoList = ({todos}) => {
     return (
         <ul>
-            <TransitionGroup transitionName="fade" transitionEnterTimeout={5000} transitionLeaveTimeout={2000}>
+            <TransitionGroup transitionName="fade" transitionEnterTimeout={500} transitionLeaveTimeout={200}>
                 {
                     todos.map((item) => (
                         <TodoItem
@@ -18,8 +18,6 @@ const TodoList = ({todos}) => {
                             text={item.text}
                             completed={item.completed}
                         />
-
-
                     ))
                 }
             </TransitionGroup>
