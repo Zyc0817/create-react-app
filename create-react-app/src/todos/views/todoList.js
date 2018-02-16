@@ -18,6 +18,8 @@ const TodoList = ({todos}) => {
                             text={item.text}
                             completed={item.completed}
                         />
+
+
                     ))
                 }
             </TransitionGroup>
