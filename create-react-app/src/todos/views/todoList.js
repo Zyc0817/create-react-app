@@ -22,7 +22,7 @@ const TodoList = ({todos}) => {
                 }
             </TransitionGroup>
         </ul>
-    );
+    )
 };
 
 TodoList.propTypes = {
